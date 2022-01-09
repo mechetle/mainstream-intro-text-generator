@@ -23,7 +23,7 @@ imageFileInput.addEventListener("change", (e) => {e.target.files[0]
   //  { once: true }
   //);
                                                   
-  updateMemeCanvas(
+  updateCanvas(
         canvas,
         image,
         topTextInput.value,
@@ -31,11 +31,11 @@ imageFileInput.addEventListener("change", (e) => {e.target.files[0]
 });
 
 topTextInput.addEventListener("change", () => {
-  updateMemeCanvas(canvas, image, topTextInput.value);
+  updateCanvas(canvas, image, topTextInput.value);
 });
 
 
-function updateMemeCanvas(canvas, image, topText) {
+function updateCanvas(canvas, image, topText) {
   const ctx = canvas.getContext("2d");
   
   // not used at the moment
